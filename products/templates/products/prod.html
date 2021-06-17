@@ -1,0 +1,31 @@
+{% extends "products/index.html" %}
+
+{% block content %}
+
+<div class="main">
+    <a class="new" href="new/" style="text-decoration: none!important;">
+        <span class="icon-plus"></span>
+        <span class="nuevo">Nuevo producto</span>
+    </a>
+</div>
+<div class="tabla">
+    <table class="prod_tabla">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
+</div>
+
+{% endblock %}
