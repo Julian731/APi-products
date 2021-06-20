@@ -1,0 +1,30 @@
+{% extends "products/index.html" %}
+
+{% block content %}
+
+<div class="main">
+    <a class="new" href="../" style="text-decoration: none!important;">
+        <span class="icon-undo2"></span>
+        <span class="nuevo">Volver</span>
+    </a>
+</div>
+<div class="tabla">
+    <table class="prod_tabla" style="display: table;">
+        <tr>
+            <th>Fecha</th>
+            <th>Nombre</th>
+            <th>Num. Productos</th>
+            <th>Validos</th>
+        </tr>
+        {% for archivo in archivos %}
+            <tr>
+                <td>{{archivo.created}}</td>
+                <td>{{archivo.nombre}}</td>
+                <td>{{archivo.cant_prod}}</td>
+                <td>{{archivo.prod_val}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

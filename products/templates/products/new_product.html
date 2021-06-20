@@ -9,7 +9,12 @@
     </a>
 </div>
 <div class="arch">
-    <input type="file">
+    <form action="" method="POST" enctype="multipart/form-data">{% csrf_token %}
+        {{form}}
+        <!-- <input type="file" name="arc"> -->
+        <input type="submit" name="subir" value="Cargar">
+    </form>
+    
 </div>
 
 {% endblock %}

@@ -1,0 +1,20 @@
+[
+	{
+		"Ean" : "78596578563",
+		"Nombre": "Arroz Gallo",
+		"Descripcion": "Arroz preparado con una mezcla especial para mayor nutrición",
+		"precio" : 500
+	},
+	{
+		"Ean" : "7537456464",
+		"Nombre": "Galletitas Arcor",
+		"Descripcion": "Galletitas Arcor",
+		"precio" : 200
+	},
+	{
+		"Ean" : "71111083883",
+		"Nombre": "Jugo de Naranja",
+		"Descripcion": "Jugo procesado con la fruta mas fresca",
+		"precio" : 100
+	},
+]

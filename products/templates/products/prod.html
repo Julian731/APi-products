@@ -10,21 +10,24 @@
 </div>
 <div class="tabla">
     <table class="prod_tabla">
+      <tr>
+        <th>Id</th>
+        <th>Ean</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+        <th></th>
+      </tr>
+      {% for producto in productos %}
         <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
+          <td>{{producto.id}}</td>
+          <td>{{producto.ean}}</td>
+          <td>{{producto.nombre}}</td>
+          <td>{{producto.descripcion}}</td>
+          <td>{{producto.precio}}</td>
+          <td><a class="new" href="{% url 'mod' producto.id %}" style="text-decoration: none!important;"><span class="icon-pencil"></span></a></td>
         </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
+      {% endfor %}
       </table>
 </div>
 

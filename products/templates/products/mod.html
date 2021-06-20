@@ -1,0 +1,32 @@
+{% extends "products/index.html" %}
+
+{% block content %}
+
+<div class="main">
+    <a class="new" href="../../" style="text-decoration: none!important;">
+        <span class="icon-undo2"></span>
+        <span class="nuevo">Volver</span>
+    </a>
+</div>
+<div class="act">
+    <form action="" method="POST">{% csrf_token %}
+        <div class="upd">
+            <div class="titulos">
+                <p>EAN</p>
+                <p>Nombre</p>
+                <p>Descripción</p>
+                <p>Precio</p>
+            </div>
+            <div class="inputs">
+                <input type="text" value="{{product.ean}}" name="ean_act">
+                <input type="text" value="{{product.nombre}}" name="nombre_act">
+                <input type="text" value="{{product.descripcion}}" name="descripcion_act">
+                <input type="text" value="{{product.precio}}" name="precio_act">
+            </div>
+        </div>
+        <div class="bot">
+            <input type="submit" value="Actualizar">
+        </div>
+    </form>
+</div>
+{% endblock %}
